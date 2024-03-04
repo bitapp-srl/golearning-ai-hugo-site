@@ -1,5 +1,5 @@
-baseURL: ''
-title: TailBliss
+baseURL: 'https://golearning.ai'
+title: Golearning AI
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -45,22 +45,27 @@ markup:
       unsafe: true
       xhtml: false
 
+
 params:
-  author: Nusser Studios
+  author: bitapp
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  moto: "Elearning Platform Powered by AI"
+  description: "Empower Minds, Ignite Knowledge: Unleashing Potential through Seamless Learning Journeys."
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
   p1:
-    heading: "Our mission"
+    heading: "Company Internal Knowledge Base"
     image: "images/pages/our-mission.png"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
-      - text: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."
-      - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
+      - text: "GoLearning provides a centralized repository for storing and organizing company-specific knowledge, documents, policies, procedures, and best practices. This ensures that critical information is easily accessible to employees whenever they need it.."
+      - text: "Companies can customize the content within LearnHub to align with their unique organizational structure, industry-specific requirements, and employee training needs. This flexibility allows for the creation of tailored learning resources that address specific challenges and objectives."
+      - text: "GoLearning can be leveraged for employee onboarding and training programs, providing new hires with access to essential resources, training materials, and interactive modules to facilitate their transition into the organization. "
+    button:
+      enable: true
+      label: "Find more"
+      link: "/knowledge-base"
   p2:
     heading: "Just in time for Hacktoberfest with JIT Tailwind."
     image: "images/pages/hacktoberfest.jpg"
@@ -112,21 +117,21 @@ params:
 
 menu:
   main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
+    - identifier: pricing
+      name: Pricing
+      url: /pricing/
+
     - identifier: about
       name: About
       url: /about/
+      weight: 10
+    - identifier: features
+      name: Features
+      url: /features
       weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
-      weight: 30
-    - identifier: dropdown
+    - identifier: products
       pre: complexdropdown
-      name: Dropdown
+      name: Products
       weight: 40
     - identifier: contact
       name: Contact
@@ -141,25 +146,20 @@ menu:
       name: About
       url: /about/
       weight: 20
-  dropdown:
-    - identifier: appearance
+  products:
+    - identifier: light
       pre: stars # can be stars, comments or piechart
-      name: Appearance
-      post: "Easy customization"
+      name: Golearning Light
+      post: "Only common features"
       url: "#"
       weight: 10
-    - identifier: comments
+    - identifier: full
       pre: comments # can be stars, comments or piechart
-      name: Comments
-      post: "Check your latest comments"
+      name: Golearning PRO
+      post: "All power"
       url: "#"
       weight: 20
-    - identifier: analytics
-      pre: piechart # can be stars, comments or piechart
-      name: Analytics
-      post: "Take a look at your statistics"
-      url: "#"
-      weight: 30
+
   footer:
     - identifier: about
       name: About

@@ -15,10 +15,10 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
+                    {{ $hero := resources.GetMatch "images/pages/bot.png" }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
-                    {{ $large := ($hero.Fill "576x576 webp q90") }}
+                    {{ $large := ($hero.Fill "576x420 webp q90") }}
 
                     <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
@@ -67,6 +67,17 @@
                                 {{ .text }}
                             </p>
                             {{ end }}
+                            {{ if .Site.Params.P1.Button}}
+                                {{ if  .Site.Params.P1.Button.enable }}
+                               
+                                    <a class="btn btn-primary mt-6" href="{{  .Site.Params.P1.Button.link | absURL }}">
+    
+                                        <button type="button" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                            {{  .Site.Params.P1.Button.label }}</button>
+                                    </a>
+                                {{ end }}
+                            {{ end }}
+                           
                         </div>
                     </div>
                 </div>
